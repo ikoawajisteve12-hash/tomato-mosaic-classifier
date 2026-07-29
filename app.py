@@ -7,7 +7,7 @@ st.set_page_config(page_title="Tomato Leaf Health Classifier", page_icon="🍅",
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("tomato_mosaic_classifier.keras")
+    return tf.keras.models.load_model("tomato_mosaic_classifier.keras", safe_mode=False)
 
 def predict(model, pil_image):
     img = pil_image.convert("RGB").resize((224, 224))
