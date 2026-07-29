@@ -3,11 +3,13 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
-st.set_page_config(page_title="Tomato Leaf Health Classifier", page_icon="🍅", layout="centered")
-
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("tomato_mosaic_classifier.keras", safe_mode=False)
+    return tf.keras.models.load_model(
+        "tomato_mosaic_classifier.keras",
+        custom_objects={"preprocess_input": tf.keras.applications.mobilenet_v3.preprocess_input},
+        safe_mode=False
+    )
 
 def predict(model, pil_image):
     img = pil_image.convert("RGB").resize((224, 224))
