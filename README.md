@@ -10,5 +10,5 @@ Binary image classifier distinguishing healthy tomato leaves from those infected
 | Ekanem Edikan Mfon| [23/EG/CV/040] | edikanekanem868-dot |
 |Joseph Uwem Joseph| 23/EG/CV/090 |joeboy212007-dotcom  |
 | Essien, Abasifreke Emmanuel| 23/EG/CV/010 | Scien001|
-| [Your Full Name] | [Your Reg. No.] | [Your GitHub Username] |
+| Thomas  Ebenezer Celestine  | 23/EG/CV/080 Reg |Mayor309  |
 | [Your Full Name] | [Your Reg. No.] | [Your GitHub Username] |
